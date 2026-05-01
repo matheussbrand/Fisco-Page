@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fisco é uma API fiscal para emitir, consultar, coletar, normalizar e exportar dados fiscais brasileiros para contabilidade, ERP e BI." />
+  <title>Fisco API | Infraestrutura fiscal para empresas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Fisco API">
+      <img src="assets/fisco-logo.png" alt="Logo Fisco" />
+      <span>Fisco API</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Menu principal">
+      <a href="#solution">Solução</a>
+      <a href="#security">Segurança</a>
+      <a href="#use-cases">Casos de uso</a>
+      <a href="#contact">Contato</a>
+    </nav>
+
+    <a class="nav-cta" href="https://rapidapi.com/matheussilbrand/api/fisco" target="_blank" rel="noopener">
+      Ver no RapidAPI
+    </a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">API fiscal brasileira para contabilidade, ERP e BI</div>
+        <h1>Centralize documentos fiscais em uma API simples, segura e pronta para integração.</h1>
+        <p class="hero-text">
+          Fisco conecta emissão sandbox, consulta, coleta, normalização e exportação de dados fiscais
+          em JSON, XML e PDF para operações contábeis, financeiras e analíticas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="https://rapidapi.com/matheussilbrand/api/fisco" target="_blank" rel="noopener">
+            Testar
+          </a>
+          <a class="btn secondary" href="#contact">
+            Solicitar demonstração
+          </a>
+        </div>
+
+        <div class="trust-row">
+          <span>NF-e</span>
+          <span>NFS-e</span>
+          <span>NFC-e</span>
+          <span>CT-e ready</span>
+          <span>Power BI ready</span>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resumo da API">
+        <div class="card-header">
+          <span class="status-dot"></span>
+          <span>Fiscal API Gateway</span>
+        </div>
+
+        <pre><code>POST /invoices/nfe
+GET  /invoices/{id}/xml
+GET  /invoices/{id}/pdf
+GET  /bi/feed</code></pre>
+
+        <div class="metrics">
+          <div>
+            <strong>JSON</strong>
+            <span>Dados normalizados</span>
+          </div>
+          <div>
+            <strong>PDF/XML</strong>
+            <span>Exportação fiscal</span>
+          </div>
+          <div>
+            <strong>API Key</strong>
+            <span>Controle por cliente</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="logos">
+      <span>Construído para</span>
+      <strong>Contabilidades</strong>
+      <strong>ERPs</strong>
+      <strong>SaaS B2B</strong>
+      <strong>Financeiro</strong>
+      <strong>BI</strong>
+    </section>
+
+    <section id="solution" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">O problema</span>
+        <h2>Notas espalhadas travam operação, contabilidade e análise fiscal.</h2>
+        <p>
+          Empresas lidam com XML, PDF, portais fiscais, ERPs e planilhas. Fisco reduz essa fricção com uma
+          camada única de API para padronizar dados e acelerar integrações.
+        </p>
+      </div>
+
+      <div class="grid three">
+        <article class="feature">
+          <h3>Emissão sandbox</h3>
+          <p>Gere NF-e e NFS-e simuladas para testes, onboarding técnico e validação de fluxo antes da integração real.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Coleta e normalização</h3>
+          <p>Receba dados fiscais em formato consistente para alimentar contabilidade, auditoria, ERP e automações.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Exportação fiscal</h3>
+          <p>Disponibilize XML, PDF/DANFE simples e JSON analítico por endpoint, com estrutura previsível.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="security" class="section dark-panel">
+      <div>
+        <span class="eyebrow">Segurança e governança</span>
+        <h2>Arquitetura pensada para ambientes corporativos.</h2>
+      </div>
+
+      <div class="security-list">
+        <div>
+          <strong>API Key por cliente</strong>
+          <span>Controle de consumo, plano e autenticação por integração.</span>
+        </div>
+        <div>
+          <strong>Auditoria SHA-256</strong>
+          <span>Registro verificável de eventos críticos e transações fiscais.</span>
+        </div>
+        <div>
+          <strong>Rate limit por plano</strong>
+          <span>Preparado para monetização e proteção contra abuso.</span>
+        </div>
+        <div>
+          <strong>Billing</strong>
+          <span>Cobrança e distribuição centralizadas.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">Casos de uso</span>
+        <h2>Uma base fiscal para times técnicos e financeiros.</h2>
+      </div>
+
+      <div class="grid four">
+        <article class="mini-card">
+          <h3>Contabilidade</h3>
+          <p>Centralização de documentos e consulta rápida por cliente, CNPJ, período e status.</p>
+        </article>
+        <article class="mini-card">
+          <h3>ERP</h3>
+          <p>Integração via API para emissão sandbox, consulta e exportação fiscal padronizada.</p>
+        </article>
+        <article class="mini-card">
+          <h3>BI e Power BI</h3>
+          <p>Feeds JSON para dashboards financeiros, fiscais e operacionais.</p>
+        </article>
+        <article class="mini-card">
+          <h3>Auditoria</h3>
+          <p>Logs de eventos e histórico de transações com rastreabilidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-panel">
+      <div>
+        <span class="eyebrow">Comece agora</span>
+        <h2>Teste a API no RapidAPI ou solicite uma demonstração.</h2>
+        <p>Ideal para validar integração fiscal, criar protótipos e iniciar pilotos com clientes.</p>
+      </div>
+      <div class="cta-actions">
+        <a class="btn primary" href="https://rapidapi.com/matheussilbrand/api/fisco" target="_blank" rel="noopener">
+          Acessar RapidAPI
+        </a>
+        <a class="btn secondary light" href="#contact">
+          Falar com o time
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-copy">
+        <span class="eyebrow">Demonstração</span>
+        <h2>Quer usar o Fisco na sua empresa?</h2>
+        <p>
+          Envie seu contato. Retornaremos com informações sobre acesso, piloto técnico e próximos passos.
+        </p>
+
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/matheussbrandao/?locale=pt" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" aria-disabled="true">Instagram em breve</a>
+          <a href="https://rapidapi.com/matheussilbrand/api/fisco" target="_blank" rel="noopener">Comece Aqui!</a>
+        </div>
+      </div>
+
+      <form class="form-card" action="https://formspree.io/f/mrejbgld" method="POST">
+        <label>
+          Nome
+          <input type="text" name="name" placeholder="Seu nome" required />
+        </label>
+
+        <label>
+          E-mail corporativo
+          <input type="email" name="email" placeholder="voce@empresa.com" required />
+        </label>
+
+        <label>
+          Empresa
+          <input type="text" name="company" placeholder="Nome da empresa" />
+        </label>
+
+        <label>
+          Interesse
+          <select name="interest" required>
+            <option value="">Selecione</option>
+            <option value="rapidapi">Quero testar</option>
+            <option value="demo">Quero uma demonstração</option>
+            <option value="enterprise">Quero plano enterprise</option>
+            <option value="partnership">Quero parceria/white-label</option>
+          </select>
+        </label>
+
+        <label>
+          Mensagem
+          <textarea name="message" rows="4" placeholder="Conte rapidamente seu cenário fiscal ou integração desejada."></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Enviar interesse</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Fisco. Infraestrutura fiscal para integrações brasileiras.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
